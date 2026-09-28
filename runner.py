@@ -3,10 +3,16 @@ import argparse
 from template import Day
 from day01.day01 import Day01
 from day02.day02 import Day02
+from day03.day03 import Day03
+from day04.day04 import Day04
+from day05.day05 import Day05
 
 days: dict[str, type[Day]] = {
     "01": Day01,
-    "02": Day02
+    "02": Day02,
+    "03": Day03,
+    "04": Day04,
+    "05": Day05
 }
 
 def readFile(fileName : str) -> list[str]:
